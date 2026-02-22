@@ -54,3 +54,13 @@ tl.to("#texto", {
   ease: "none"
 });
 
+const legenda = "Porque criar seu site comigo?";
+
+gsap.to("#legend-section", {
+  duration: legenda.length * 0.08,
+  text: legenda,
+  repeat: -1,
+  yoyo: true,
+  repeatDelay: 2,
+  ease: "none"
+});

@@ -27,7 +27,10 @@
   --font-title: "Jersey 10", system-ui, sans-serif;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: var(--font-title);
   color: var(--color-text-primary);
 }
@@ -183,28 +186,18 @@ main {
     text-decoration: none;
     font-family: Helvetica;
     border-radius: 40px;
-    border: 2px solid #457a99;
+    border: 1px solid #a5eb89;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     margin: 25px;
 
-    /* Vidro */
-    background: transparent;
+    font-family: Helvetica;
+    font-weight: bold;
+  }
 
-    backdrop-filter: blur(14px) saturate(120%);
-    -webkit-backdrop-filter: blur(10px) saturate(120%);
-
-    border: 1px solid rgba(255, 255, 255, 0.25);
-
-    /* Profundidade */
-    box-shadow:
-      0 8px 24px rgba(0, 0, 0, 0.18),
-      inset 0 1px 0 rgba(255, 255, 255, 0.35);
-
-    /* Performance */
-    transform: translate3d(0, 0, 0);
-    will-change: transform;
-
-    isolation: isolate;
+  .link-conhecer:hover {
+    color: #0f244a;
+    background-color: var(--color-text-muted);
+    transition: ease-in-out;
   }
 
   .mini-computador {
@@ -219,22 +212,36 @@ main {
   padding: 14px;
 
   div {
+    display: flex;
+    flex-direction: column;
     padding: 14px;
     background-color: var(--color-text-primary);
     border-radius: 40px;
 
+    span {
+      text-align: center;
+      padding: 10px;
+      border: 1px solid #457a99;
+      border-radius: 24px;
+      color: #457a99;
+      font-size: small;
+    }
+
     h2 {
-      font-size: 36px;
+      font-size: 2.5rem;
       color: var(--color-bg-secondary);
       margin: 14px;
+      line-height: 80%;
     }
 
     .container-paragraphy {
-      border: 1px solid #1e1e1e;
+      border: 1px solid #457a99;
       border-radius: 24px;
       p {
+        font-size: 1.5rem
         color: var(--color-bg-secondary);
         text-align: justify;
+        hyphens: auto;
       }
     }
   }

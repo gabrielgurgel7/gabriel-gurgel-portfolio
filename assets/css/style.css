@@ -215,13 +215,8 @@ main {
     display: flex;
     flex-direction: column;
     padding: 14px;
-    background-color: var(--color-text-primary);
+    background: linear-gradient(347deg, var(--branco-off-white, #F5F5F5) 0.41%, #C3E9FF 99.59%);
     border-radius: 40px;
-
-    #legenda-section {
-      min-width: 28ch;
-      display: inline-block;
-    }
 
     span {
       text-align: center;

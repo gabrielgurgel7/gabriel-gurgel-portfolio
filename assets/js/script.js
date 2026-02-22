@@ -1,4 +1,4 @@
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+gsap.registerPlugin(TextPlugin, ScrollTrigger, ScrollSmoother);
 
 // animação de flutuar
 gsap.to("#float-img", {
@@ -30,4 +30,15 @@ btn.addEventListener("mouseenter", () => {
 btn.addEventListener("mouseleave", () => {
   gsap.killTweensOf(btn);
   gsap.set(btn, { "--rotation": "0deg" });
+});
+
+const texto = "Olá, mundo!";
+
+gsap.to("#texto", {
+  duration: texto.length * 0.08,
+  text: texto,
+  repeat: -1,
+  yoyo: true,
+  repeatDelay: 2,
+  ease: "none"
 });

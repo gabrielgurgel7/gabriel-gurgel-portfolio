@@ -15,14 +15,13 @@
 
 :root {
   /* PALETA DE CORES */
-  --color-bg-main: #1E1E1E;
-  --color-bg-secondary: #0F244A;
-  --color-accent: #457A99;
-  --color-border: #A2A8B4;
-  --color-text-muted: #A5EB89;
-  --color-text-primary: #C0E6FD;
-  --color-highlight: #F5F5F5;
-
+  --color-bg-main: #1e1e1e;
+  --color-bg-secondary: #0f244a;
+  --color-accent: #457a99;
+  --color-border: #a2a8b4;
+  --color-text-muted: #a5eb89;
+  --color-text-primary: #c0e6fd;
+  --color-highlight: #f5f5f5;
 
   /* TIPOGRAFIA */
   --font-title: "Jersey 10", system-ui, sans-serif;
@@ -30,7 +29,7 @@
 
 h1 {
   font-family: var(--font-title);
-  color: var(--color-text-primary)
+  color: var(--color-text-primary);
 }
 
 body {
@@ -222,3 +221,23 @@ main {
   background-color: var(--color-highlight);
 }
 
+
+/* ESTILOS DESKTOP */
+@media screen and (min-width: 1024px) {
+  header {
+    left: 125px;
+    right: 125px;
+  }
+
+  .hero {
+    flex-direction: row-reverse;
+    .container-apresentacao {
+      margin-left: 36px;
+    }
+
+    .mini-computador {
+      width: 360px;
+      height: auto;
+    }
+  }
+}

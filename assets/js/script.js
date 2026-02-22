@@ -32,13 +32,25 @@ btn.addEventListener("mouseleave", () => {
   gsap.set(btn, { "--rotation": "0deg" });
 });
 
+
 const texto = "Olá, mundo!";
 
-gsap.to("#texto", {
+const tl = gsap.timeline({ repeat: -1 });
+
+for (let i = 0; i < 2; i++) {
+  tl.to("#texto", { text: "...", duration: 0.8 })
+    .to("#texto", { duration: 0.4 });
+}
+
+tl.to("#texto", {
   duration: texto.length * 0.08,
   text: texto,
-  repeat: -1,
-  yoyo: true,
-  repeatDelay: 2,
+  ease: "none"
+})
+.to("#texto", { duration: 2 })
+.to("#texto", {
+  duration: texto.length * 0.05,
+  text: "",
   ease: "none"
 });
+

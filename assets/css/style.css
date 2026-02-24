@@ -36,7 +36,7 @@ h4 {
 }
 
 body {
-  background-color: var(--color-bg-main);
+  background-image: url("../imgs/bg-azul-claro.png");
   font-family: Helvetica;
 }
 
@@ -58,53 +58,105 @@ header {
 
   border-radius: 40px;
 
+  overflow: hidden;
   /* Vidro */
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0.18) 0%,
-    rgba(255, 255, 255, 0.06) 100%
+    rgba(255, 255, 255, 0.111) 0%,
+    rgba(216, 216, 216, 0.06) 100%
   );
 
   backdrop-filter: blur(14px) saturate(120%);
   -webkit-backdrop-filter: blur(10px) saturate(120%);
 
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  border: none;
 
   /* Profundidade */
   box-shadow:
-    0 8px 24px rgba(0, 0, 0, 0.18),
-    inset 0 1px 0 rgba(255, 255, 255, 0.35);
-
+    0 8px 24px rgba(0, 0, 0, 0.18),            /* sombra externa */
+    inset 0 1px 0 rgba(255, 255, 255, 0.35),  /* brilho superior */
+    inset 0 -1px 0 rgba(255, 255, 255, 0.216);       /* sombra inferior */
   /* Performance */
   transform: translate3d(0, 0, 0);
-  will-change: transform;
 
   isolation: isolate;
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    a {
+      gap: 14px;
+    }
+    img {
+      width: 5rem;
+      height: auto;
+    }
+  }
+
+  .light-night-bg {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    padding: 16px;
+    border: 2px solid var(--color-border);
+    border-radius: 40px;
+
+    .night {
+      width: 18px;
+    }
+
+    .night-hover {
+      width: 18px;
+      display: none;
+    }
+  }
+
+  .light-night-bg:hover {
+    border: 2px solid var(--color-text-muted);
+    .night-hover {
+      display: block;
+    }
+    .night {
+      display: none;
+    }
+  }
 }
 
-/* Conteúdo interno */
-header img {
-  width: 5rem;
-  height: auto;
+header::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: radial-gradient(
+    130% 80% at 50% -30%,
+    rgba(255,255,255,0.18),
+    transparent 60%
+  );
+
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  z-index: -1;
 }
 
 main {
-  z-index: 1;
+  z-index: 4;
   position: relative;
+  background-image: url("../imgs/bg-site-1.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .hero {
+  z-index: 3;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url(../imgs/bg-azul-claro.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 40px;
-  margin: 14px;
 
   .container-apresentacao {
     padding-top: 143px;
@@ -186,7 +238,7 @@ main {
     text-decoration: none;
     font-family: Helvetica;
     border-radius: 40px;
-    border: 1px solid #a5eb89;
+    border: 2px solid var(--color-text-muted);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     margin: 25px;
 
@@ -207,10 +259,7 @@ main {
 }
 
 .about-me {
-  height: auto;
-  background-color: var(--color-bg-main);
-  padding: 14px;
-
+  height: 50vh;
   div {
     display: flex;
     flex-direction: column;
@@ -249,7 +298,6 @@ main {
 
 .competencias {
   height: auto;
-  background-color: var(--color-bg-main);
   padding: 14px;
 
   div {
@@ -274,12 +322,55 @@ main {
     }
   }
 }
+ 
+footer {
+  background-image: url("../imgs/bitmap-bg.svg");
+  background-color: transparent;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 40px;
+}
 
 /* ESTILOS DESKTOP */
 @media screen and (min-width: 1024px) {
   header {
-    left: 125px;
-    right: 125px;
+    padding: 14px;
+
+    .sanduich-menu {
+      display: none;
+    }
+
+    nav {
+      ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        
+        
+        a {
+          text-decoration: none;
+          font-style: none;
+          color: #FFF;
+          font-size: 1rem;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 1.5;
+          padding: 15px 23px;
+          border-radius: 2.5rem;
+          border: 2px solid var(--color-border);
+          background: transparent;
+          margin-left:7px;
+        }
+
+        a:hover {
+          border: 2px solid var(--color-text-muted);
+        }
+      }
+    }
   }
 
   .hero {
@@ -292,5 +383,9 @@ main {
       width: 360px;
       height: auto;
     }
+  }
+
+  .about-me {
+    padding: 14px 200px;
   }
 }

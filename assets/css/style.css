@@ -36,7 +36,7 @@ h4 {
 }
 
 body {
-  background-image: url(../imgs/bg-azul-claro.png);
+  background-color: var(--color-bg-main);
   font-family: Helvetica;
   color: var(--color-highlight);
 }
@@ -264,6 +264,7 @@ main {
   .section-container {
     display: flex;
     flex-direction: column;
+    text-align: center;
     padding: 14px;
     border-radius: 40px;
     border: none;
@@ -286,12 +287,36 @@ main {
     isolation: isolate;
 
     span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
       text-align: center;
       padding: 10px;
       border: 1px solid var(--color-border);
       border-radius: 24px;
       color: var(--color-border);
       font-size: small;
+    }
+
+    .cta-button {
+      max-width: 200px;
+      height: 40px;
+      text-align: center;
+      text-decoration: none;
+      margin-top: 14px;
+      padding: 10px;
+      border: 1px solid var(--color-border);
+      border-radius: 24px;
+      color: var(--color-highlight);
+      font-size: small;
+      font-weight: bold;
+    }
+
+    .cta-button:hover {
+      color: var(--color-bg-main);
+      border: 1px solid var(--color-text-muted);
+      background-color: var(--color-text-muted);
     }
 
     h2 {
@@ -313,11 +338,38 @@ main {
       }
     }
   }
+
+  .division {
+    background-color: var(--color-border);
+    border: none;
+    height: 1px;
+    margin-top: 14px;
+  }
+
+  .services {
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-auto-rows: 250px;
+      gap: 14px;
+      margin-top: 14px;
+      .service-card {
+        border-radius: 24px;
+        background-color: #a5eb89;
+      }
+    }
+  }
+
+  .contact {
+    .section-container {
+      background-color: var(--color-highlight);
+    }
+  }
 }
 
 footer {
-  height: 25vh;
-  background-color: var(--color-bg-main);
+  height: 35vh;
+  background-color: var(--color-highlight);
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   padding: 14px;

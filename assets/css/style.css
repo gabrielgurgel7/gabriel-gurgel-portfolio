@@ -32,12 +32,13 @@ h2,
 h3,
 h4 {
   font-family: var(--font-title);
-  color: var(--color-text-primary);
+  color: var(--color-bg-secondary);
 }
 
 body {
-  background-image: url("../imgs/bg-azul-claro.png");
+  background-image: url(../imgs/bg-azul-claro.png);
   font-family: Helvetica;
+  color: var(--color-highlight);
 }
 
 header {
@@ -52,12 +53,9 @@ header {
   left: 14px;
   right: 14px;
   z-index: 5;
-
   height: 80px;
-  padding: 0 32px;
-
+  padding: 0 14px;
   border-radius: 40px;
-
   overflow: hidden;
   /* Vidro */
   background: linear-gradient(
@@ -65,20 +63,16 @@ header {
     rgba(255, 255, 255, 0.111) 0%,
     rgba(216, 216, 216, 0.06) 100%
   );
-
   backdrop-filter: blur(14px) saturate(120%);
   -webkit-backdrop-filter: blur(10px) saturate(120%);
-
   border: none;
-
   /* Profundidade */
   box-shadow:
-    0 8px 24px rgba(0, 0, 0, 0.18),            /* sombra externa */
-    inset 0 1px 0 rgba(255, 255, 255, 0.35),  /* brilho superior */
-    inset 0 -1px 0 rgba(255, 255, 255, 0.216);       /* sombra inferior */
+    0 8px 24px rgba(0, 0, 0, 0.18),
+    /* sombra externa */ inset 0 1px 0 rgba(255, 255, 255, 0.35),
+    /* brilho superior */ inset 0 -1px 0 rgba(255, 255, 255, 0.216); /* sombra inferior */
   /* Performance */
   transform: translate3d(0, 0, 0);
-
   isolation: isolate;
 
   nav {
@@ -132,7 +126,7 @@ header::after {
 
   background: radial-gradient(
     130% 80% at 50% -30%,
-    rgba(255,255,255,0.18),
+    rgba(255, 255, 255, 0.18),
     transparent 60%
   );
 
@@ -144,151 +138,176 @@ header::after {
 main {
   z-index: 4;
   position: relative;
-  background-image: url("../imgs/bg-site-1.svg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 
-.hero {
-  z-index: 3;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  .container-apresentacao {
-    padding-top: 143px;
-    .ola-mundo {
-      width: 15rem;
-      height: 7rem;
-      font-family: "Jersey 10";
-      font-size: 6rem;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 60%; /* 3.6rem */
-      background: linear-gradient(180deg, #f5f5f5 0%, #bfe4fb 100%);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      margin-bottom: 18px;
-    }
-
-    .container-text-and-photo {
-      width: 281px;
-      height: auto;
-      display: flex;
-      align-items: center;
-      gap: 14px;
-
-      .paragrafo-apresentacao {
-        font-family: Helvetica;
-        font-size: 1.25rem;
-        font-weight: 700;
-        line-height: 1.5rem;
-
-        .texto-gradiente {
-          background: linear-gradient(90deg, #f5f5f5 0%, #c0e6fd 100%);
-          background-clip: text;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-        }
-
-        .nome-gabriel-gurgel {
-          color: #a5eb89;
-          font-family: Helvetica;
-          font-size: 2.25rem;
-          font-style: normal;
-          font-weight: 700;
-          line-height: 2.25rem;
-          letter-spacing: -0.1575rem;
-        }
-
-        .apelido-gabriel-gurgel {
-          color: #a5eb89;
-          font-family: Helvetica;
-          font-size: 1.25rem;
-          font-style: normal;
-          font-weight: 700;
-          line-height: 2.25rem;
-          letter-spacing: -0.0875rem;
-        }
-      }
-
-      .gabriel-gurgel-photo {
-        width: 100px;
-        height: 100px;
-
-        border-radius: 50%;
-        object-fit: cover;
-        display: block;
-      }
-    }
-  }
-
-  .link-conhecer {
-    position: sticky;
+  .hero {
+    z-index: 3;
+    min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 224px;
-    height: 60px;
-    color: #f5f5f5;
-    text-decoration: none;
-    font-family: Helvetica;
-    border-radius: 40px;
-    border: 2px solid var(--color-text-muted);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    margin: 25px;
 
-    font-family: Helvetica;
-    font-weight: bold;
+    .container-apresentacao {
+      padding-top: 143px;
+      .ola-mundo {
+        width: 15rem;
+        height: 7rem;
+        font-family: "Jersey 10";
+        font-size: 6rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 60%; /* 3.6rem */
+        background: linear-gradient(180deg, #f5f5f5 0%, #bfe4fb 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 18px;
+      }
+
+      .container-text-and-photo {
+        width: 281px;
+        height: auto;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+
+        .paragrafo-apresentacao {
+          font-family: Helvetica;
+          font-size: 1.25rem;
+          font-weight: 700;
+          line-height: 1.5rem;
+
+          .texto-gradiente {
+            background: linear-gradient(90deg, #f5f5f5 0%, #c0e6fd 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+
+          .nome-gabriel-gurgel {
+            color: #a5eb89;
+            font-family: Helvetica;
+            font-size: 2.25rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 2.25rem;
+            letter-spacing: -0.1575rem;
+          }
+
+          .apelido-gabriel-gurgel {
+            color: #a5eb89;
+            font-family: Helvetica;
+            font-size: 1.25rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 2.25rem;
+            letter-spacing: -0.0875rem;
+          }
+        }
+
+        .gabriel-gurgel-photo {
+          width: 100px;
+          height: 100px;
+
+          border-radius: 50%;
+          object-fit: cover;
+          display: block;
+        }
+      }
+    }
+
+    .link-conhecer {
+      position: sticky;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 224px;
+      height: 60px;
+      color: #f5f5f5;
+      text-decoration: none;
+      font-family: Helvetica;
+      border-radius: 40px;
+      border: 2px solid var(--color-text-muted);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      margin: 25px;
+
+      font-family: Helvetica;
+      font-weight: bold;
+    }
+
+    .link-conhecer:hover {
+      color: #0f244a;
+      background-color: var(--color-text-muted);
+      transition: ease-in-out;
+    }
+
+    .mini-computador {
+      width: 300px;
+      height: auto;
+    }
   }
 
-  .link-conhecer:hover {
-    color: #0f244a;
-    background-color: var(--color-text-muted);
-    transition: ease-in-out;
+  /* PADDING GLOBAL */
+  .padding-global {
+    padding: 14px;
   }
 
-  .mini-computador {
-    width: 300px;
-    height: auto;
+  /* ALINHAMENTO SECTION GLOBAL */
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
-}
 
-.about-me {
-  height: 50vh;
-  div {
+  /* ESTILO DIVS SECTION GLOBAL */
+  .section-container {
     display: flex;
     flex-direction: column;
     padding: 14px;
-    background: linear-gradient(347deg, var(--branco-off-white, #F5F5F5) 0.41%, #C3E9FF 99.59%);
     border-radius: 40px;
+    border: none;
+    /* Vidro */
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.111) 0%,
+      rgba(216, 216, 216, 0.06) 100%
+    );
+    background-color: #1e1e1e;
+    backdrop-filter: blur(14px) saturate(120%);
+    -webkit-backdrop-filter: blur(10px) saturate(120%);
+    /* Profundidade */
+    box-shadow:
+      0 8px 24px rgba(0, 0, 0, 0.18),
+      /* sombra externa */ inset 0 1px 0 rgba(255, 255, 255, 0.35),
+      /* brilho superior */ inset 0 -1px 0 rgba(255, 255, 255, 0.216); /* sombra inferior */
+    /* Performance */
+    transform: translate3d(0, 0, 0);
+    isolation: isolate;
 
     span {
       text-align: center;
       padding: 10px;
-      border: 1px solid #457a99;
+      border: 1px solid var(--color-border);
       border-radius: 24px;
-      color: #457a99;
+      color: var(--color-border);
       font-size: small;
     }
 
     h2 {
       font-size: 3rem;
-      color: var(--color-bg-secondary);
+      color: var(--color-text-primary);
       margin: 14px;
       line-height: 80%;
     }
 
     .container-paragraphy {
-      border: 1px solid #457a99;
+      border: 1px solid var(--color-border);
       border-radius: 24px;
+      padding: 14px;
       p {
         font-size: 1rem;
-        color: var(--color-bg-secondary);
+        color: var(--color-highlight);
         text-align: justify;
         hyphens: auto;
       }
@@ -296,46 +315,20 @@ main {
   }
 }
 
-.competencias {
-  height: auto;
-  padding: 14px;
-
-  div {
-    padding: 14px;
-    border: 1px solid #457a99;
-    border-radius: 40px;
-
-    h2 {
-      font-size: 36px;
-      color: var(--color-text-muted);
-      margin: 14px;
-    }
-
-    .container-paragraphy {
-      background-color: #f5f5f5;
-      border: 1px solid #457a99;
-      border-radius: 24px;
-      p {
-        color: var(--color-bg-secondary);
-        text-align: justify;
-      }
-    }
-  }
-}
- 
 footer {
-  background-image: url("../imgs/bitmap-bg.svg");
-  background-color: transparent;
-  height: 100vh;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 40px;
+  height: 25vh;
+  background-color: var(--color-bg-main);
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  padding: 14px;
 }
 
 /* ESTILOS DESKTOP */
 @media screen and (min-width: 1024px) {
   header {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
     padding: 14px;
 
     .sanduich-menu {
@@ -349,12 +342,11 @@ footer {
         list-style: none;
         padding: 0;
         margin: 0;
-        
-        
+
         a {
           text-decoration: none;
           font-style: none;
-          color: #FFF;
+          color: #fff;
           font-size: 1rem;
           font-style: normal;
           font-weight: 500;
@@ -363,7 +355,7 @@ footer {
           border-radius: 2.5rem;
           border: 2px solid var(--color-border);
           background: transparent;
-          margin-left:7px;
+          margin-left: 7px;
         }
 
         a:hover {
@@ -373,19 +365,21 @@ footer {
     }
   }
 
-  .hero {
-    flex-direction: row-reverse;
-    .container-apresentacao {
-      margin-left: 36px;
+  main {
+    .section-container {
+      max-width: 1000px;
     }
 
-    .mini-computador {
-      width: 360px;
-      height: auto;
-    }
-  }
+    .hero {
+      flex-direction: row-reverse;
+      .container-apresentacao {
+        margin-left: 36px;
+      }
 
-  .about-me {
-    padding: 14px 200px;
+      .mini-computador {
+        width: 360px;
+        height: auto;
+      }
+    }
   }
 }

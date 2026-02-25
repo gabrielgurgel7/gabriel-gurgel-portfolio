@@ -40,7 +40,7 @@ gsap.to(".link-conhecer", {
 
 
 // ANIMAÇÃO LEGENDAS DE SEÇÃO:
-const legenda = "Porque criar seu site comigo?";
+const legenda = "Quem é o GAB?";
 
 gsap.to("#legend-section", {
   duration: legenda.length * 0.08,

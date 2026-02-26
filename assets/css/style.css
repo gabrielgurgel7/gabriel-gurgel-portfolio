@@ -426,9 +426,25 @@ main {
               padding: 7px;
               border-radius: 10px;
               border: 1px solid var(--color-border);
+              
+              /* Configura a lista para ficar 
+              escondida no estado original */
+              opacity: 0;
+              visibility: hidden;
+              transform: translateY(6px);
+              transition: opacity 0.3s ease, transform 0.3s ease;
+              
               p {
                 font-size: small;
               }
+            }
+
+            /* Anima a lista de tecnologias
+            para aparecer somente quando passar o mouse */
+            &:hover li {
+              opacity: 1;
+              visibility: visible;
+              transform: translateY(0);
             }
           }
         }

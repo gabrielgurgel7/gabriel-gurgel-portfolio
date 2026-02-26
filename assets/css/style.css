@@ -388,19 +388,49 @@ main {
     .container-projects {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      grid-auto-rows: 250px;
       gap: 14px;
       margin-top: 14px;
       .project-card {
+        aspect-ratio: 1 / 1;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-between;
         border-radius: 24px;
         background-color: #5e5e5e9f;
+        .project-color {
+          display: flex;
+          align-items: center;
+          padding: 14px;
+          justify-content: space-between;
+          height: 64px;
+          width: 100%;
+          background-color: #C0E6FD;
+          border-top-left-radius: 24px;
+          border-top-right-radius: 24px;
 
-        h3 {
-          font-family: Helvetica;
-          color: #f5f5f5;
+          h3 {
+            font-size: 24px;
+            font-family: Helvetica;
+            color: var(--color-bg-main)
+          }
+        }
+        .technologies {
+          padding: 14px;
+          ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            row-gap: 14px;
+            li {
+              padding: 7px;
+              border-radius: 10px;
+              border: 1px solid var(--color-border);
+              p {
+                font-size: small;
+              }
+            }
+          }
         }
       }
     }

@@ -1,258 +1,314 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" href="gab-favicon-white.svg">
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Gab Gurgel | Portfólio</title>
-  </head>
-  <body>
-    <!-- CABEÇALHO -->
-    <header>
-      <!-- NAVEGAÇÀO -->
-      <nav>
-        <!-- LOGO GAB -->
-        <a href="index.html">
-          <img src="assets/imgs/logo-gab.svg" alt="Logo Gab" />
-        </a>
-        <!-- MENU SANDUICHE -->
-        <div class="menu">
-            <svg class="sanduich-menu"
-            xmlns="http://www.w3.org/2000/svg"
-            width="27"
-            height="24"
-            viewBox="0 0 27 24"
-            fill="none"
-          >
-            <path
-              d="M1.5 1.5H25.5M1.5 12H25.5M1.5 22.5H25.5"
-              stroke="#A5EB89"
-              stroke-width="3"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-          <!-- NAVEGAÇÃO / LINKS -->
-          <ul>
-            <li>
-              <a href="#">Sobre</a>
-              <a href="#">Projetos</a>
-              <a href="#">Contatos</a>
-            </li>
-          </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" href="gab-favicon-white.svg">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <title>Gab Gurgel | Portfólio</title>
+</head>
+
+<body>
+  <!-- CABEÇALHO -->
+  <header>
+    <!-- NAVEGAÇÀO -->
+    <nav>
+      <!-- LOGO GAB -->
+      <a href="index.html">
+        <img src="assets/imgs/logo-gab.svg" alt="Logo Gab" />
+      </a>
+      <!-- MENU SANDUICHE -->
+      <div class="menu">
+        <svg class="sanduich-menu" xmlns="http://www.w3.org/2000/svg" width="27" height="24" viewBox="0 0 27 24"
+          fill="none">
+          <path d="M1.5 1.5H25.5M1.5 12H25.5M1.5 22.5H25.5" stroke="#A5EB89" stroke-width="3" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+        <!-- NAVEGAÇÃO / LINKS -->
+        <ul>
+          <li>
+            <a href="#">Sobre</a>
+            <a href="#">Projetos</a>
+            <a href="#">Contatos</a>
+          </li>
+        </ul>
+      </div>
+      <button class="light-night-bg">
+        <img class="night" src="assets/imgs/icon-night.svg" alt="">
+        <img class="night-hover" src="assets/imgs/icon-night-hover.svg" alt="">
+      </button>
+    </nav>
+  </header>
+  <!-- CONTEÚDO DA PÁGINA -->
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container-apresentacao">
+        <h1 class="ola-mundo" id="texto"></h1>
+        <div class="container-text-and-photo">
+          <img class="gabriel-gurgel-photo" src="assets/imgs/gabriel-gurgel.png" alt="" />
+          <p class="paragrafo-apresentacao">
+            <span class="texto-gradiente"> Sou </span>
+            <strong class="nome-gabriel-gurgel">Gabriel Gurgel</strong>
+            <strong class="apelido-gabriel-gurgel">(Gab),</strong>
+            <span class="texto-gradiente"> desenvolvedor front-end. </span>
+          </p>
         </div>
-        <button class="light-night-bg">
-          <img class="night" src="assets/imgs/icon-night.svg" alt="">
-          <img class="night-hover" src="assets/imgs/icon-night-hover.svg" alt="">
-        </button>
-      </nav>
-    </header>
-    <!-- CONTEÚDO DA PÁGINA -->
-    <main>  
-      <!-- HERO -->
-      <section class="hero">
-        <div class="container-apresentacao">
-          <h1 class="ola-mundo" id="texto"></h1>
-          <div class="container-text-and-photo">
-            <img
-              class="gabriel-gurgel-photo"
-              src="assets/imgs/gabriel-gurgel.png"
-              alt=""
-            />
-            <p class="paragrafo-apresentacao">
-              <span class="texto-gradiente"> Sou </span>
-              <strong class="nome-gabriel-gurgel">Gabriel Gurgel</strong>
-              <strong class="apelido-gabriel-gurgel">(Gab),</strong>
-              <span class="texto-gradiente"> desenvolvedor front-end. </span>
+        <a class="link-conhecer" href="#sobre">
+          <span>Conheça meu trabalho</span>
+        </a>
+      </div>
+
+      <img class="mini-computador" src="assets/imgs/mini-computador-gab.png" alt="" id="float-img" />
+    </section>
+    <!-- ABOUT ME-->
+    <section class="about-me" id="sobre">
+      <div class="padding-global">
+        <div class="section-container">
+          <span id="legend-section">...</span>
+          <h2>Sobre mim</h2>
+          <div class="container-paragraphy">
+            <p>
+              Sou publicitário de formação e designer gráfico
+              à mais de 5 anos, com experiência tanto freelancer
+              como no mercado de educação. Ao longo desse tempo,
+              minha forma de enxergar o design evoluiu: hoje,
+              a interatividade é um dos pilares do meu trabalho,
+              porque acredito que ela gera valor real para as marcas.
+              Por isso, passei a desenvolver sites que vão além
+              de um visual bonito, focando em experiências
+              que engajam e entregam resultados concretos
+              para quem está do outro lado da tela.
             </p>
           </div>
-          <a class="link-conhecer" href="#sobre">
-            <span>Conheça meu trabalho</span>
-          </a>
         </div>
+      </div>
+    </section>
+    <!-- SERVICES -->
+    <section class="services">
+      <div class="padding-global">
+        <div class="section-container">
+          <h2>Serviços</h2>
+          <div class="container-paragraphy">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Ab commodi nostrum aliquid consequatur hic saepe quae
+              ex rem vero qui, magni quod eveniet praesentium non?
+              Magnam deserunt voluptatibus possimus ab?
+            </p>
+          </div>
+          <div class="grid-container">
+            <div class="service-card">
+              <h3>Em breve serviços disponíveis</h3>
+            </div>
+            <div class="service-card">
+              <h3>Em breve serviços disponíveis</h3>
+            </div>
+            <div class="service-card">
+              <h3>Em breve serviços disponíveis</h3>
+            </div>
+            <div class="service-card">
+              <h3>Em breve serviços disponíveis</h3>
+            </div>
+            <div class="service-card">
+              <h3>Em breve serviços disponíveis</h3>
+            </div>
+            <div class="service-card">
+              <h3>Em breve serviços disponíveis</h3>
+            </div>
+          </div>
+          <hr class="division">
+          <a class="cta-button" href="#"> Fazer orçamento</a>
+        </div>
+      </div>
+    </section>
+    <!-- WORK / PROJECTS -->
+    <section class="work-projects">
+      <div class="padding-global">
+        <div class="section-container">
+          <h2>Meus projetos</h2>
+          <div class="container-paragraphy">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Ab commodi nostrum aliquid consequatur hic saepe quae
+              ex rem vero qui, magni quod eveniet praesentium non?
+              Magnam deserunt voluptatibus possimus ab?
+            </p>
+          </div>
+          <div class="container-projects">
+            <div class="project-card">
+              <div class="project-color">
+                <h3>Projeto 01</h3>
+                <a href="#"><img src="assets/imgs/explore-button.svg" alt=""></a>
+              </div>
+              <div class="technologies">
+                <ul>
+                  <li><p>HTML</p></li>
+                  <li><p>CSS</p></li>
+                  <li><p>JAVA SCRIPT</p></li>
+                  <li><p>GSAP</p></li>
+                  <li><p>TRUE JS</p></li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-color">
+                <h3>Projeto 02</h3>
+                <a href="#"><img src="assets/imgs/explore-button.svg" alt=""></a>
+              </div>
+              <div class="technologies">
+                <ul>
+                  <li><p>HTML</p></li>
+                  <li><p>CSS</p></li>
+                  <li><p>JAVA SCRIPT</p></li>
+                  <li><p>GSAP</p></li>
+                  <li><p>TRUE JS</p></li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-color">
+                <h3>Projeto 03</h3>
+                <a href="#"><img src="assets/imgs/explore-button.svg" alt=""></a>
+              </div>
+              <div class="technologies">
+                <ul>
+                  <li><p>HTML</p></li>
+                  <li><p>CSS</p></li>
+                  <li><p>JAVA SCRIPT</p></li>
+                  <li><p>GSAP</p></li>
+                  <li><p>TRUE JS</p></li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-color">
+                <h3>Projeto 04</h3>
+                <a href="#"><img src="assets/imgs/explore-button.svg" alt=""></a>
+              </div>
+              <div class="technologies">
+                <ul>
+                  <li><p>HTML</p></li>
+                  <li><p>CSS</p></li>
+                  <li><p>JAVA SCRIPT</p></li>
+                  <li><p>GSAP</p></li>
+                  <li><p>TRUE JS</p></li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-color">
+                <h3>Projeto 05</h3>
+                <a href="#"><img src="assets/imgs/explore-button.svg" alt=""></a>
+              </div>
+              <div class="technologies">
+                <ul>
+                  <li><p>HTML</p></li>
+                  <li><p>CSS</p></li>
+                  <li><p>JAVA SCRIPT</p></li>
+                  <li><p>GSAP</p></li>
+                  <li><p>TRUE JS</p></li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-color">
+                <h3>Projeto 06</h3>
+                <a href="#"><img src="assets/imgs/explore-button.svg" alt=""></a>
+              </div>
+              <div class="technologies">
+                <ul>
+                  <li><p>HTML</p></li>
+                  <li><p>CSS</p></li>
+                  <li><p>JAVA SCRIPT</p></li>
+                  <li><p>GSAP</p></li>
+                  <li><p>TRUE JS</p></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <hr class="division">
+          <a class="cta-button" href="#"> Fazer orçamento</a>
+        </div>
+      </div>
+    </section>
+    <!-- SKILLS / TECHNOLOGIES -->
+    <section class="skills">
+      <div class="padding-global">
+        <div class="section-container">
+          <span id="legend-section">...</span>
+          <h2>Skills e Tecnologias</h1>
+            <div class="container-paragraphy">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Ab commodi nostrum aliquid consequatur hic saepe quae
+                ex rem vero qui, magni quod eveniet praesentium non?
+                Magnam deserunt voluptatibus possimus ab?
+              </p>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- TESTIMONIALS -->
+    <section class="testimonials">
+      <div class="padding-global">
+        <div class="section-container">
+          <span id="legend-section">...</span>
+          <h2>Depoimentos</h2>
+          <div class="container-paragraphy">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Ab commodi nostrum aliquid consequatur hic saepe quae
+              ex rem vero qui, magni quod eveniet praesentium non?
+              Magnam deserunt voluptatibus possimus ab?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CONTACT ME -->
+    <section class="contact">
+      <div class="padding-global">
+        <div class="section-container">
+          <span id="legend-section">...</span>
+          <h2>Fala comigo!</h2>
+          <form action="" method="get">
+            <fieldset>
+              <legend>Dados pessoais</legend>
+              <label for="name">Nome completo</label>
+              <input id="name" type="text" name="userName" required>
+              <br>
+              <label for="email">Email</label>
+              <input id="email" type="email" name="userEmail" required>
+              <br>
+              <label for="userMessage">Sua mensagem</label>
+              <textarea name="userMessage" id="userMessage"
+                placeholder="Escreva um texto breve de até 5 linhas"></textarea>
+            </fieldset>
+            <!-- BOTÃO ENVIAR -->
+            <button class="form-button" type="submit" aria-label="Enviar dados do formulário">Enviar</button>
 
-        <img
-          class="mini-computador"
-          src="assets/imgs/mini-computador-gab.png"
-          alt=""
-          id="float-img"
-        />
-      </section>
-      <!-- ABOUT ME-->
-      <section class="about-me" id="sobre">
-        <div class="padding-global">
-          <div class="section-container">
-            <span id="legend-section">...</span>
-            <h2>Sobre mim</h2>
-            <div class="container-paragraphy">
-              <p>
-                Sou publicitário de formação e designer gráfico 
-                à mais de 5 anos, com experiência tanto freelancer 
-                como no mercado de educação. Ao longo desse tempo, 
-                minha forma de enxergar o design evoluiu: hoje, 
-                a interatividade é um dos pilares do meu trabalho, 
-                porque acredito que ela gera valor real para as marcas. 
-                Por isso, passei a desenvolver sites que vão além 
-                de um visual bonito, focando em experiências 
-                que engajam e entregam resultados concretos 
-                para quem está do outro lado da tela.
-              </p>
-            </div>
-          </div>
+            <!-- BOTÃO LIMPAR -->
+            <button class="form-button" type="reset" aria-label="Limpar dados do formulário">Limpar</button>
+          </form>
         </div>
-      </section>
-      <!-- SERVICES -->
-      <section class="services">
-        <div class="padding-global">
-          <div class="section-container">
-            <h2>Serviços</h2>
-            <div class="container-paragraphy">
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                Ab commodi nostrum aliquid consequatur hic saepe quae 
-                ex rem vero qui, magni quod eveniet praesentium non? 
-                Magnam deserunt voluptatibus possimus ab?
-              </p>
-            </div>
-            <div class="grid-container">
-              <div class="service-card">
-                <h3>Em breve serviços disponíveis</h3>
-              </div>
-              <div class="service-card">
-                <h3>Em breve serviços disponíveis</h3>
-              </div>
-              <div class="service-card">
-                <h3>Em breve serviços disponíveis</h3>
-              </div>
-              <div class="service-card">
-                <h3>Em breve serviços disponíveis</h3>
-              </div>
-              <div class="service-card">
-                <h3>Em breve serviços disponíveis</h3>
-              </div>
-              <div class="service-card">
-                <h3>Em breve serviços disponíveis</h3>
-              </div>
-            </div>
-            <hr class="division">
-            <a class="cta-button" href="#"> Fazer orçamento</a>
-          </div>
-        </div>
-      </section>
-      <!-- WORK / PROJECTS -->
-      <section class="work-projects">
-        <div class="padding-global">
-          <div class="section-container">
-            <h2>Meus projetos</h2>
-            <div class="container-paragraphy">
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                Ab commodi nostrum aliquid consequatur hic saepe quae 
-                ex rem vero qui, magni quod eveniet praesentium non? 
-                Magnam deserunt voluptatibus possimus ab?
-              </p>
-            </div>
-            <div class="container-projects">
-              <div class="project-card">
-                <h3>Projetos disponíveis em breve</h3>
-              </div>
-              <div class="project-card">
-                <h3>Projetos disponíveis em breve</h3>
-              </div>
-              <div class="project-card">
-                <h3>Projetos disponíveis em breve</h3>
-              </div>
-              <div class="project-card">
-                <h3>Projetos disponíveis em breve</h3>
-              </div>
-              <div class="project-card">
-                <h3>Projetos disponíveis em breve</h3>
-              </div>
-              <div class="project-card">
-                <h3>Projetos disponíveis em breve</h3>
-              </div>
-            </div>
-            <hr class="division">
-            <a class="cta-button" href="#"> Fazer orçamento</a>
-          </div>
-        </div>
-      </section>
-      <!-- SKILLS / TECHNOLOGIES -->
-      <section class="skills">
-        <div class="padding-global">
-          <div class="section-container">
-            <span id="legend-section">...</span>
-            <h2>Skills e Tecnologias</h1>
-            <div class="container-paragraphy">
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                Ab commodi nostrum aliquid consequatur hic saepe quae 
-                ex rem vero qui, magni quod eveniet praesentium non? 
-                Magnam deserunt voluptatibus possimus ab?
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- TESTIMONIALS -->
-      <section class="testimonials">
-        <div class="padding-global">
-          <div class="section-container">
-            <span id="legend-section">...</span>
-            <h2>Depoimentos</h2>
-            <div class="container-paragraphy">
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                Ab commodi nostrum aliquid consequatur hic saepe quae 
-                ex rem vero qui, magni quod eveniet praesentium non? 
-                Magnam deserunt voluptatibus possimus ab?
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- CONTACT ME -->
-      <section class="contact">
-        <div class="padding-global">
-          <div class="section-container">
-            <span id="legend-section">...</span>
-            <h2>Fala comigo!</h2>
-            <form action="" method="get">
-              <fieldset>
-                <legend>Dados pessoais</legend>
-                  <label for="name">Nome completo</label>
-                  <input id="name" type="text" name="userName" required>
-                  <br>
-                  <label for="email">Email</label>
-                  <input id="email" type="email" name="userEmail" required>
-                  <br>
-                  <label for="userMessage">Sua mensagem</label>
-                  <textarea name="userMessage" id="userMessage" 
-                  placeholder="Escreva um texto breve de até 5 linhas"></textarea>
-              </fieldset>  
-              <!-- BOTÃO ENVIAR -->
-              <button class="form-button" type="submit" aria-label="Enviar dados do formulário">Enviar</button>
+      </div>
+    </section>
+  </main>
+  <!-- FOOTER -->
+  <footer>
+    <h3>Footer</h3>
+    <p>aqui é o footer</p>
+  </footer>
+  <!-- PLUGINS GSAP / JS -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/TextPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollSmoother.min.js"></script>
+  <!-- CÓDIGO JAVA SCRIPT -->
+  <script src="assets/js/script.js"></script>
+</body>
 
-              <!-- BOTÃO LIMPAR -->
-              <button class="form-button" type="reset" aria-label="Limpar dados do formulário">Limpar</button>
-            </form>
-          </div>
-        </div>
-      </section>
-    </main>
-    <!-- FOOTER -->
-    <footer>
-      <h3>Footer</h3>
-      <p>aqui é o footer</p>
-    </footer>
-    <!-- PLUGINS GSAP / JS -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/TextPlugin.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollSmoother.min.js"></script>
-    <!-- CÓDIGO JAVA SCRIPT -->
-    <script src="assets/js/script.js"></script>
-  </body>
 </html>

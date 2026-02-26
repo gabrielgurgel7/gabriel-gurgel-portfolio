@@ -28,11 +28,9 @@
         </svg>
         <!-- NAVEGAÇÃO / LINKS -->
         <ul>
-          <li>
-            <a href="#">Sobre</a>
-            <a href="#">Projetos</a>
-            <a href="#">Contatos</a>
-          </li>
+          <li><a href="#about-me">Sobre</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#contact-me">Contato</a></li>
         </ul>
       </div>
       <button class="light-night-bg">
@@ -56,7 +54,7 @@
             <span class="texto-gradiente"> desenvolvedor front-end. </span>
           </p>
         </div>
-        <a class="link-conhecer" href="#sobre">
+        <a class="link-conhecer" href="#about-me">
           <span>Conheça meu trabalho</span>
         </a>
       </div>
@@ -64,7 +62,7 @@
       <img class="mini-computador" src="assets/imgs/mini-computador-gab.png" alt="" id="float-img" />
     </section>
     <!-- ABOUT ME-->
-    <section class="about-me" id="sobre">
+    <section class="about-me" id="about-me">
       <div class="padding-global">
         <div class="section-container">
           <span id="legend-section">...</span>
@@ -125,9 +123,8 @@
       </div>
     </section>
     <!-- WORK / PROJECTS -->
-    <section class="work-projects">
-      <div class="padding-global">
-        <div class="section-container">
+    <section class="work-projects padding-global" id="projects">
+      <div class="section-container">
           <h2>Meus projetos</h2>
           <div class="container-paragraphy">
             <p>
@@ -230,70 +227,62 @@
             </div>
           </div>
           <hr class="division">
-          <a class="cta-button" href="#"> Fazer orçamento</a>
+          <a class="cta-button" href="#"> Mais projetos</a>
         </div>
-      </div>
     </section>
     <!-- SKILLS / TECHNOLOGIES -->
-    <section class="skills">
-      <div class="padding-global">
-        <div class="section-container">
-          <span id="legend-section">...</span>
-          <h2>Skills e Tecnologias</h1>
-            <div class="container-paragraphy">
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Ab commodi nostrum aliquid consequatur hic saepe quae
-                ex rem vero qui, magni quod eveniet praesentium non?
-                Magnam deserunt voluptatibus possimus ab?
-              </p>
-            </div>
+    <section class="skills padding-global">
+      <div class="section-container">
+        <h2>Skills e Tecnologias</h1>
+        <div class="container-paragraphy">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Ab commodi nostrum aliquid consequatur hic saepe quae
+            ex rem vero qui, magni quod eveniet praesentium non?
+            Magnam deserunt voluptatibus possimus ab?
+          </p>
         </div>
       </div>
     </section>
     <!-- TESTIMONIALS -->
-    <section class="testimonials">
-      <div class="padding-global">
-        <div class="section-container">
-          <span id="legend-section">...</span>
-          <h2>Depoimentos</h2>
-          <div class="container-paragraphy">
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Ab commodi nostrum aliquid consequatur hic saepe quae
-              ex rem vero qui, magni quod eveniet praesentium non?
-              Magnam deserunt voluptatibus possimus ab?
-            </p>
-          </div>
+    <section class="testimonials padding-global">
+      <div class="section-container">
+        <h2>Depoimentos</h2>
+        <div class="container-paragraphy">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Ab commodi nostrum aliquid consequatur hic saepe quae
+            ex rem vero qui, magni quod eveniet praesentium non?
+            Magnam deserunt voluptatibus possimus ab?
+          </p>
         </div>
       </div>
     </section>
     <!-- CONTACT ME -->
-    <section class="contact">
-      <div class="padding-global">
-        <div class="section-container">
-          <span id="legend-section">...</span>
-          <h2>Fala comigo!</h2>
-          <form action="" method="get">
-            <fieldset>
-              <legend>Dados pessoais</legend>
-              <label for="name">Nome completo</label>
-              <input id="name" type="text" name="userName" required>
-              <br>
-              <label for="email">Email</label>
-              <input id="email" type="email" name="userEmail" required>
-              <br>
-              <label for="userMessage">Sua mensagem</label>
-              <textarea name="userMessage" id="userMessage"
-                placeholder="Escreva um texto breve de até 5 linhas"></textarea>
+    <section class="contact padding-global" id="contact-me">
+      <div class="section-container">
+        <h2>Fala comigo!</h2>
+        <form action="" method="get">
+          <fieldset>
+            <label for="name">Nome completo</label>
+            <input id="name" type="text" name="userName" required>
+            <label for="email">Email</label>
+            <input id="email" type="email" name="userEmail" required>
+            <br>
+            <label for="userMessage">Sua mensagem</label>
+            <textarea name="userMessage" id="userMessage"
+            placeholder="Escreva um texto breve de até 5 linhas"></textarea>
             </fieldset>
             <!-- BOTÃO ENVIAR -->
-            <button class="form-button" type="submit" aria-label="Enviar dados do formulário">Enviar</button>
+            <button class="form-button" 
+            type="submit" aria-label="Enviar dados do formulário"
+            >Enviar</button>
 
             <!-- BOTÃO LIMPAR -->
-            <button class="form-button" type="reset" aria-label="Limpar dados do formulário">Limpar</button>
-          </form>
-        </div>
+            <button class="form-button" 
+            type="reset" aria-label="Limpar dados do formulário"
+            >Limpar</button>
+        </form>
       </div>
     </section>
   </main>

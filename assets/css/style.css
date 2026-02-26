@@ -81,9 +81,22 @@ header {
     justify-content: space-between;
     width: 100%;
 
-    a {
+    .menu ul {
+      display: none;
+    }
+
+    .menu.active ul {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 90px;
+      right: 14px;
+      background: var(--color-text-muted);
+      padding: 20px;
+      border-radius: 20px;
       gap: 14px;
     }
+
     img {
       width: 5rem;
       height: auto;
@@ -270,6 +283,7 @@ main {
     border: none;
     max-width: 1200px;
     width: 100%;
+
     /* Vidro */
     background: linear-gradient(
       180deg,
@@ -279,11 +293,13 @@ main {
     background-color: #1e1e1e;
     backdrop-filter: blur(14px) saturate(120%);
     -webkit-backdrop-filter: blur(10px) saturate(120%);
+
     /* Profundidade */
     box-shadow:
       0 8px 24px rgba(0, 0, 0, 0.18),
-      /* sombra externa */ inset 0 1px 0 rgba(255, 255, 255, 0.35),
-      /* brilho superior */ inset 0 -1px 0 rgba(255, 255, 255, 0.216); /* sombra inferior */
+      inset 0 1px 0 rgba(255, 255, 255, 0.35),
+      inset 0 -1px 0 rgba(255, 255, 255, 0.216);
+
     /* Performance */
     transform: translate3d(0, 0, 0);
     isolation: isolate;
@@ -328,11 +344,13 @@ main {
     }
 
     .form-button[type="submit"]:hover {
+      color: var(--color-bg-main);
       background-color: var(--color-text-muted);
     }
 
     .form-button[type="reset"]:hover {
-      background-color: orangered;
+      color: var(--color-bg-main);
+      background-color: #FF344D;
     }
 
     h2 {
@@ -404,14 +422,14 @@ main {
           justify-content: space-between;
           height: 64px;
           width: 100%;
-          background-color: #C0E6FD;
+          background-color: #c0e6fd;
           border-top-left-radius: 24px;
           border-top-right-radius: 24px;
 
           h3 {
             font-size: 24px;
             font-family: Helvetica;
-            color: var(--color-bg-main)
+            color: var(--color-bg-main);
           }
         }
         .technologies {
@@ -426,14 +444,16 @@ main {
               padding: 7px;
               border-radius: 10px;
               border: 1px solid var(--color-border);
-              
+
               /* Configura a lista para ficar 
               escondida no estado original */
               opacity: 0;
               visibility: hidden;
               transform: translateY(6px);
-              transition: opacity 0.3s ease, transform 0.3s ease;
-              
+              transition:
+                opacity 0.3s ease,
+                transform 0.3s ease;
+
               p {
                 font-size: small;
               }
@@ -452,21 +472,31 @@ main {
     }
   }
 
-  .contact,
-  .about-me {
-    .section-container {
-      background-color: var(--color-bg-secondary);
-    }
-  }
-
   .contact {
     fieldset {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
       border-radius: 14px;
       border: 1px solid var(--color-border);
+      padding: 14px;
+
+      label {
+        color: var(--color-highlight);
+      }
+
+      input,
+      textarea {
+        min-width: 100%;
+        height: 40px;
+        border-radius: 14px;
+        border: 1px solid var(--color-border);
+        background: var(--color-text-primary);
+        padding: 14px;
+        color: var(--color-bg-main);
+        font-family: Helvetica;
+      }
+
+      textarea {
+        min-height: 100px;
+      }
     }
   }
 }
@@ -476,14 +506,41 @@ footer {
   background-color: var(--color-highlight);
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  padding: 14px;
+  margin: 0 14px;
+}
+
+
+/* ESTILOS TABLET */
+@media screen and (min-width: 768px) {
+  header {
+    /* width: 100%; */
+    margin: 0 auto;
+    padding: 14px;
+
+    .sanduich-menu {
+      display: none;
+    }
+  }
+
+  main {
+    .hero {
+      flex-direction: row-reverse;
+      .container-apresentacao {
+        margin-left: 36px;
+      }
+
+      .mini-computador {
+        width: 360px;
+        height: auto;
+      }
+    }
+  }
 }
 
 /* ESTILOS DESKTOP */
 @media screen and (min-width: 1024px) {
   header {
     max-width: 1000px;
-    width: 100%;
     margin: 0 auto;
     padding: 14px;
 
@@ -541,13 +598,13 @@ footer {
     .contact {
       .section-container {
         min-width: 1000px;
+
       }
     }
   }
 
   footer {
     max-width: 1000px;
-    width: 100%;
     margin: 0 auto;
   }
 }

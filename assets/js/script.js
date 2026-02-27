@@ -23,13 +23,16 @@ tl.to("#texto", {
 });
 
 // ANIMAÇÃO FLUTUAR MINI COMPUTADOR - SECAO HERO:
-gsap.to("#float-img", {
-  y: -20, // sobe 20px
-  duration: 1.5, // tempo de animação
-  ease: "power1.inOut", // suavidade
-  yoyo: true, // voltar
-  repeat: -1, // repetir infinito
-});
+gsap.fromTo("#float-img",
+  { y: -15 },
+  {
+    y: 15,
+    duration: 2,
+    ease: "sine.inOut",
+    repeat: -1,
+    yoyo: true
+  }
+);
 
 gsap.to(".link-conhecer", {
   "--rotation": "360deg",

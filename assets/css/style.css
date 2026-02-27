@@ -373,11 +373,6 @@ main {
       background-color: var(--color-text-muted);
       transition: ease-in-out;
     }
-
-    .mini-computador {
-      width: 300px;
-      height: auto;
-    }
   }
 
   .services {
@@ -544,11 +539,6 @@ footer {
 
       .container-apresentacao {
         margin-left: 36px;
-      }
-
-      .mini-computador {
-        width: 360px;
-        height: auto;
       }
     }
   }

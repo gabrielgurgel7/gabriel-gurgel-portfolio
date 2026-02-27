@@ -11,6 +11,63 @@
 </head>
 
 <body>
+  <!-- BACKGROUND -->
+  <div class="bg-svg">
+    <!-- cole o SVG aqui -->
+    <svg
+      viewBox="0 0 1920 1080"
+      preserveAspectRatio="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs>
+
+        <!-- GRADIENTE -->
+        <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#2b415d"/>
+          <stop offset="50%" stop-color="#050507"/>
+          <stop offset="100%" stop-color="#2d4563"/>
+        </linearGradient>
+
+        <!-- NOISE BASE -->
+        <filter id="spaceNoise">
+
+          <!-- gera ruído -->
+          <feTurbulence
+            type="fractalNoise"
+            baseFrequency="1.1"
+            numOctaves="3"
+            seed="8"
+          />
+
+          <!-- aumenta contraste → vira pontos -->
+          <feColorMatrix
+            type="matrix"
+            values="
+              0 0 0 0 0
+              0 0 0 0 0
+              0 0 0 0 0
+              0 0 0 18 -9"
+          />
+
+          <!-- suaviza -->
+          <feGaussianBlur stdDeviation="0.3"/>
+
+        </filter>
+
+      </defs>
+
+      <!-- fundo -->
+      <rect width="100%" height="100%" fill="url(#bgGradient)" />
+
+      <!-- estrelas -->
+      <rect
+        width="100%"
+        height="100%"
+        filter="url(#spaceNoise)"
+        opacity="0.9"
+      />
+    </svg>
+  </div>
   <!-- CABEÇALHO -->
   <header>
     <!-- NAVEGAÇÀO -->

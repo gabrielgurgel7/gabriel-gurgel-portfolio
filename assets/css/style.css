@@ -36,7 +36,14 @@ h4 {
 }
 
 body {
+  background-image: url(../imgs/bg-gab-portfolio.JPG);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   background-color: var(--color-bg-main);
+  min-height: 100vh;
+  margin: 0;
   font-family: Helvetica;
   color: var(--color-highlight);
 }

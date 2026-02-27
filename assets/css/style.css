@@ -545,7 +545,7 @@ main {
           background: var(--color-bg-main);
           padding: 14px;
           margin-bottom: 7px;
-          color: var(--color-highlight);
+          color: var(--color-highlight);  
           font-family: Helvetica;
         }
 

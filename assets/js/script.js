@@ -50,11 +50,3 @@ gsap.to("#legend-section", {
   repeatDelay: 2,
   ease: "none"
 });
-
-// ANIMAÇÃO ATIVAR LINKS HEADER:
-const menu = document.querySelector(".menu");
-const sanduich = document.querySelector(".sanduich-menu");
-
-sanduich.addEventListener("click", () => {
-  menu.classList.toggle("active");
-});

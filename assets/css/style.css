@@ -16,6 +16,7 @@
 :root {
   /* PALETA DE CORES */
   --color-bg-main: #1e1e1e;
+  --color-bg-body: #191919;
   --color-bg-secondary: #0f244a;
   --color-accent: #457a99;
   --color-border: #a2a8b4;
@@ -38,24 +39,7 @@ h4 {
 body {
   font-family: Helvetica;
   color: var(--color-highlight);
-  /* container do background */
-  .bg-svg {
-    position: fixed;
-    inset: 0;          /* top:0 right:0 bottom:0 left:0 */
-    z-index: -1;       /* fica atrás de tudo */
-    width: 100%;
-    height: 100%;
-  }
-
-  /* faz o svg preencher tudo */
-  .bg-svg svg {
-    width: 100%;
-    height: 100%;
-    display: block;
-
-
-  }
-
+  background-color: var(--color-bg-body);
 }
 header {
   /* Layout */
@@ -182,7 +166,7 @@ main {
     padding: 14px;
     border-radius: 40px;
     border: none;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     width: 100%;
 
     /* Vidro */
@@ -272,6 +256,8 @@ main {
     .container-paragraphy {
       /* border: 1px solid var(--color-border); */
       background-color: var(--color-bg-main);
+      background-size: cover;
+      background-position: center;
       border-radius: 24px;
       padding: 14px;
       p {
@@ -284,17 +270,23 @@ main {
   }
 
   .hero {
-    height: 100vh;
+    background-image: url(../imgs/bitmap-bg-azul.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-attachment: scroll;
 
     .container-apresentacao {
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding-top: 143px;
+      padding-top: 80px;
       .ola-mundo {
         width: 15rem;
         height: 7rem;
@@ -303,10 +295,10 @@ main {
         font-style: normal;
         font-weight: 400;
         line-height: 60%; /* 3.6rem */
-        background: linear-gradient(180deg, #f5f5f5 0%, #bfe4fb 100%);
+        /* background: linear-gradient(180deg, #f5f5f5 0%, #bfe4fb 100%);
         background-clip: text;
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent; */
         margin-bottom: 18px;
       }
 
@@ -324,14 +316,16 @@ main {
           line-height: 1.5rem;
 
           .texto-gradiente {
-            background: linear-gradient(90deg, #f5f5f5 0%, #c0e6fd 100%);
+            /* background: linear-gradient(90deg, #f5f5f5 0%, #c0e6fd 100%);
             background-clip: text;
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            -webkit-text-fill-color: transparent; */
+            color: var(--color-bg-body);
           }
 
           .nome-gabriel-gurgel {
-            color: #a5eb89;
+            /* color: #a5eb89; */
+            color: var(--color-bg-body);
             font-family: Helvetica;
             font-size: 2.25rem;
             font-style: normal;
@@ -341,7 +335,8 @@ main {
           }
 
           .apelido-gabriel-gurgel {
-            color: #a5eb89;
+            /* color: #a5eb89; */
+            color: var(--color-bg-body);
             font-family: Helvetica;
             font-size: 1.25rem;
             font-style: normal;
@@ -369,7 +364,8 @@ main {
       justify-content: center;
       width: 224px;
       height: 60px;
-      color: #f5f5f5;
+      color: var(--color-bg-body);
+      /* color: #f5f5f5; */
       text-decoration: none;
       font-family: Helvetica;
       border-radius: 40px;
@@ -386,8 +382,11 @@ main {
       background-color: var(--color-text-muted);
       transition: ease-in-out;
     }
-  }
 
+    img {
+      height: 500px;
+    }
+  }
   .services {
     .grid-container {
       display: grid;
@@ -409,7 +408,6 @@ main {
       }
     }
   }
-
   .work-projects {
     .container-projects {
       display: grid;
@@ -479,7 +477,6 @@ main {
       }
     }
   }
-
   .skills {
     .container-paragraphy {
       border: none;
@@ -578,7 +575,7 @@ footer {
 
   main {
     .hero {
-      max-width: 1000px;
+      /* max-width: 1000px; */
       flex-direction: row-reverse;
       margin: 0 auto;
 
@@ -631,10 +628,10 @@ footer {
   }
 
   main {
-    .section-container {
+    /* .section-container {
       max-width: 1000px;
       margin: 0 auto;
-    }
+    } */
 
     .hero {
       flex-direction: row-reverse;
@@ -642,10 +639,10 @@ footer {
         margin-left: 36px;
       }
 
-      .mini-computador {
+      /* .mini-computador {
         width: 360px;
         height: auto;
-      }
+      } */
     }
 
     .contact {

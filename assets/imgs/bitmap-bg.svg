@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_3" data-name="Camada 3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Gradiente_sem_nome_122-10);
+      }
+
+      .cls-2 {
+        fill: url(#Gradiente_sem_nome_122);
+      }
+
+      .cls-3 {
+        fill: url(#Gradiente_sem_nome_122-5);
+      }
+
+      .cls-4 {
+        fill: url(#Gradiente_sem_nome_122-4);
+      }
+
+      .cls-5 {
+        fill: url(#Gradiente_sem_nome_122-3);
+      }
+
+      .cls-6 {
+        fill: url(#Gradiente_sem_nome_122-2);
+      }
+
+      .cls-7 {
+        fill: url(#Gradiente_sem_nome_122-9);
+      }
+
+      .cls-8 {
+        fill: url(#Gradiente_sem_nome_122-8);
+      }
+
+      .cls-9 {
+        fill: url(#Gradiente_sem_nome_122-7);
+      }
+
+      .cls-10 {
+        fill: url(#Gradiente_sem_nome_122-6);
+      }
+
+      .cls-11 {
+        fill: #191919;
+      }
+    </style>
+    <linearGradient id="Gradiente_sem_nome_122" data-name="Gradiente sem nome 122" x1="677.65" y1="315.9" x2="715.29" y2="315.9" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c5ddff"/>
+      <stop offset="1" stop-color="#f5f5f5"/>
+    </linearGradient>
+    <linearGradient id="Gradiente_sem_nome_122-2" data-name="Gradiente sem nome 122" x1="602.35" y1="372.37" x2="677.65" y2="372.37" xlink:href="#Gradiente_sem_nome_122"/>
+    <linearGradient id="Gradiente_sem_nome_122-3" data-name="Gradiente sem nome 122" x1="1242.35" y1="391.2" x2="1280" y2="391.2" xlink:href="#Gradiente_sem_nome_122"/>
+    <linearGradient id="Gradiente_sem_nome_122-4" data-name="Gradiente sem nome 122" x1="1807.06" y1="165.32" x2="1844.71" y2="165.32" xlink:href="#Gradiente_sem_nome_122"/>
+    <linearGradient id="Gradiente_sem_nome_122-5" data-name="Gradiente sem nome 122" x1="0" y1="223.83" x2="1920" y2="223.83" xlink:href="#Gradiente_sem_nome_122"/>
+    <linearGradient id="Gradiente_sem_nome_122-6" data-name="Gradiente sem nome 122" x1="1844.71" y1="202.96" x2="1882.35" y2="202.96" xlink:href="#Gradiente_sem_nome_122"/>
+    <linearGradient id="Gradiente_sem_nome_122-7" data-name="Gradiente sem nome 122" x1="1731.76" y1="202.96" x2="1807.06" y2="202.96" xlink:href="#Gradiente_sem_nome_122"/>
+    <linearGradient id="Gradiente_sem_nome_122-8" data-name="Gradiente sem nome 122" x1="1091.76" y1="391.2" x2="1129.41" y2="391.2" xlink:href="#Gradiente_sem_nome_122"/>
+    <linearGradient id="Gradiente_sem_nome_122-9" data-name="Gradiente sem nome 122" x1="1167.06" y1="353.55" x2="1204.71" y2="353.55" xlink:href="#Gradiente_sem_nome_122"/>
+    <linearGradient id="Gradiente_sem_nome_122-10" data-name="Gradiente sem nome 122" x1="1355.29" y1="391.2" x2="1392.94" y2="391.2" xlink:href="#Gradiente_sem_nome_122"/>
+  </defs>
+  <rect class="cls-11" width="1920" height="1080"/>
+  <g>
+    <rect class="cls-2" x="677.65" y="297.08" width="37.65" height="37.65"/>
+    <polygon class="cls-6" points="677.65 410.02 640 410.02 640 372.37 602.35 372.37 602.35 334.73 640 334.73 677.65 334.73 677.65 372.37 677.65 410.02"/>
+    <rect class="cls-5" x="1242.35" y="372.37" width="37.65" height="37.65"/>
+    <rect class="cls-4" x="1807.06" y="146.49" width="37.65" height="37.65"/>
+    <polygon class="cls-3" points="1920 0 1920 146.49 1882.35 146.49 1882.35 108.84 1844.71 108.84 1807.06 108.84 1769.41 108.84 1769.41 71.2 1731.76 71.2 1731.76 108.84 1731.76 146.49 1694.12 146.49 1694.12 108.84 1656.47 108.84 1656.47 146.49 1656.47 184.14 1618.82 184.14 1581.18 184.14 1581.18 146.49 1543.53 146.49 1543.53 184.14 1581.18 184.14 1581.18 221.79 1581.18 259.43 1618.82 259.43 1618.82 221.79 1656.47 221.79 1694.12 221.79 1731.76 221.79 1731.76 259.43 1694.12 259.43 1656.47 259.43 1656.47 297.08 1618.82 297.08 1581.18 297.08 1581.18 334.73 1543.53 334.73 1543.53 297.08 1505.88 297.08 1505.88 334.73 1505.88 372.37 1468.24 372.37 1430.59 372.37 1392.94 372.37 1392.94 334.73 1430.59 334.73 1468.24 334.73 1468.24 297.08 1430.59 297.08 1392.94 297.08 1355.29 297.08 1355.29 334.73 1317.65 334.73 1317.65 372.37 1280 372.37 1280 334.73 1242.35 334.73 1204.71 334.73 1204.71 297.08 1167.06 297.08 1167.06 334.73 1129.41 334.73 1129.41 297.08 1091.76 297.08 1091.76 334.73 1091.76 372.37 1054.12 372.37 1054.12 410.02 1016.47 410.02 978.82 410.02 941.18 410.02 941.18 447.67 903.53 447.67 903.53 410.02 865.88 410.02 828.24 410.02 828.24 372.37 790.59 372.37 790.59 410.02 752.94 410.02 752.94 372.37 752.94 334.73 752.94 297.08 790.59 297.08 790.59 259.43 828.24 259.43 828.24 221.79 790.59 221.79 790.59 259.43 752.94 259.43 715.29 259.43 677.65 259.43 640 259.43 602.35 259.43 564.71 259.43 564.71 297.08 527.06 297.08 489.41 297.08 489.41 259.43 489.41 221.79 451.76 221.79 451.76 259.43 414.12 259.43 414.12 297.08 376.47 297.08 338.82 297.08 338.82 334.73 301.18 334.73 263.53 334.73 225.88 334.73 225.88 372.37 188.24 372.37 150.59 372.37 150.59 334.73 112.94 334.73 112.94 297.08 75.29 297.08 75.29 259.43 37.65 259.43 37.65 297.08 0 297.08 0 0 1920 0"/>
+    <rect class="cls-10" x="1844.71" y="184.14" width="37.65" height="37.65"/>
+    <polygon class="cls-9" points="1769.41 184.14 1807.06 184.14 1807.06 221.79 1769.41 221.79 1731.76 221.79 1731.76 184.14 1769.41 184.14"/>
+    <rect class="cls-8" x="1091.76" y="372.37" width="37.65" height="37.65"/>
+    <rect class="cls-7" x="1167.06" y="334.73" width="37.65" height="37.65"/>
+    <rect class="cls-1" x="1355.29" y="372.37" width="37.65" height="37.65"/>
+  </g>
+</svg>

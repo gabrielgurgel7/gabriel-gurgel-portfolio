@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_2" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 302.6 358.37">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Gradiente_sem_nome_122);
+      }
+
+      .cls-2 {
+        fill: url(#Gradiente_sem_nome_122-2);
+      }
+    </style>
+    <linearGradient id="Gradiente_sem_nome_122" data-name="Gradiente sem nome 122" x1="0" y1="179.19" x2="298.1" y2="179.19" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c5ddff"/>
+      <stop offset="1" stop-color="#f5f5f5"/>
+    </linearGradient>
+    <linearGradient id="Gradiente_sem_nome_122-2" data-name="Gradiente sem nome 122" x1="271.16" y1="16.09" x2="302.6" y2="16.09" xlink:href="#Gradiente_sem_nome_122"/>
+  </defs>
+  <polygon class="cls-1" points="272.15 159.75 250.47 159.75 250.47 130.57 297.53 130.57 297.53 63.43 250.47 63.43 250.47 32.51 89.79 32.51 89.79 65 60.72 65 60.72 0 28.3 0 28.3 65 0 65 0 225.68 29.54 225.68 29.54 291.84 59.61 291.84 59.61 358.37 92.03 358.37 92.03 322.56 151.08 322.56 151.08 291.84 181.35 291.84 181.35 323.74 231.59 323.74 231.59 346.78 298.1 346.78 298.1 279.63 272.15 279.63 272.15 159.75"/>
+  <rect class="cls-2" x="271.16" y=".22" width="31.44" height="31.73"/>
+</svg>
